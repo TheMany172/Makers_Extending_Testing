@@ -148,27 +148,29 @@ you in these next sections - starting with the basics.
 
 Go to one of your chosen sites, start VoiceOver and try these commands:
 
-`VO + right arrow` - moves you along the page, **left to right**, and **then
-down** to the next row and so on. `VO + right arrow` - moves you along the page,
-**right to left**, and **then up** to the next row and so on. `VO + space` -
-clicks on things, like buttons, links, checkboxes and so on `VO + shift + down
-arrow` - interact an element, such as a dropdown menu`
+* `VO + right arrow` - moves you along the page, **left to right**, and **then
+down** to the next row and so on
+* `VO + right arrow` - moves you along the page, **right to left**, and **then
+  up** to the next row and so on
+* `VO + space` - clicks on things, like buttons, links, checkboxes and so on
+* `VO + shift + down arrow` - interact an element, such as a dropdown menu`
 
 ##### Advanced
 
 Now, try these commands:
 
-`VO + command + H` - will jump you from heading to heading, which is commonly
-used to get an overview of new pages `VO + U` - opens the 'rotor', which is a
-set of lists, containing things like headings and tables, that can be used to
-navigate, quickly and efficiently, around the page
+* `VO + command + H` - will jump you from heading to heading, which is commonly
+used to get an overview of new pages
+* `VO + U` - opens the 'rotor', which is a set of lists, containing things like
+headings and tables, that can be used to navigate, quickly and efficiently,
+around the page
 
 ##### Voice Controls and Settings
 
 These might be useful too:
 
-`control` - interrupt VoiceOver `VO + command + up arrow / down arrow` - turns
-VoiceOver speed up / down
+* `control` - interrupt VoiceOver
+* `VO + command + up arrow / down arrow` - turns VoiceOver speed up / down
 
 ## Challenge: VoiceOver
 
@@ -191,7 +193,8 @@ creating a recording you make after you've finished testing.
 4. What are the differences and similarities between "accessibility testing" and
    "usability testing"?
 
-[After you're done, submit your recording](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=et_as03).
+[After you're done, submit your
+recording](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=et_as03).
 
 [Next Challenge](04_extensions.md)
 
