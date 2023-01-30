@@ -91,20 +91,78 @@ basic website, with its sign-up/log in/etc. functionality, then use that diagram
 to think about planning some hypothetical tests.
 
 1. Write down the different **states** e.g. sign-up page
+- Sign up page (S1)
+- Successful sign in page (S2)
+- Signed out page (S3)
+
+(aware that S1 style labels might be confusing with many variables - but for this there are only 3)
+
 2. Write down the different **events** e.g. user logs in
+- User logs in
+- User logs out
+- User clicks 'sign in' on S3
+- Invalid password
+- invalid email address
+- blank email
+- blank password
+
+
 3. Determine which events cause a transition between one state and another
+- User logs in
+- User logs out
+- User clicks 'sign in' on S3
+
 4. Make this into a state transition diagram
+
+![Screenshot.png](./Screenshot2.png)
+
+
 5. Draw up a state transition table, based on your diagram, populating the table
    below
-6. Design a test case that covers all states and all events/transitions at least
-   once i.e. what is the starting state and what events (in what order) are
-   required
-7. Commit your resources (state transition diagram and test case) to GitHub and
-   submit your challenge
 
 | Initial State | Event | Next State | 
 |-|-|-|
-| ... | ... | ... |
+| S1 | User logs in | S2 |
+| S2 | User logs out | S3 |
+| S3 | User clicks 'sign in' on S3 | S1 |
+| S1 | invalid login (any) | S1 |
+
+
+
+6. Design a test case that covers all states and all events/transitions at least
+   once i.e. what is the starting state and what events (in what order) are
+   required
+
+| Test type | Email Address | Password | Expected outcome |  
+|-|-|-|-|
+| Simple | Signed up | valid | Move to S2 |
+| Simple | Signed up | Invalid | Remain on S1 |
+| Simple | unknown/invalid | 'valid entry' | Remain on S1|
+| Simple | unknown/invalid | 'invalid entry' | Remain on S1 |
+| Simple | Anything | Blank | Remain on S1 |
+| Simple | Blank | Anything | Remain on S1 |
+
+For end to end - complete all of the above (other than the first one), then all of the below in one test:
+
+| Test type | Email Address | Password | Expected outcome |  
+|-|-|-|-|
+| End to end | Signed up | Valid | Move to S2 |
+
+
+
+
+| Initial state | Event | Expected Next State |   
+|-|-|-|
+| S2 | User logs out | S3 |
+| S3 | User clicks 'sign in' on S3 | S1 |
+| S1 | invalid login (any) | S1 |
+
+
+
+7. Commit your resources (state transition diagram and test case) to GitHub and
+   submit your challenge
+
+
 
 N.B. You don't need to represent the whole of the rest of this website, whatever
 it does. Focus on the current functionality around signing up and logging in,
